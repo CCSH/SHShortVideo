@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
     s.platform     = :ios, "7.0"
     s.homepage     = "https://github.com/CCSH/SHShortVideo"
     s.source       = { :git => "https://github.com/CCSH/SHShortVideo.git", :tag => s.version }
-    s.source_files = "SHEmotionKeyboard/*.{h,m}"
-    s.resource     = "SHEmotionKeyboard/SHShortVideo.bundle"
+    s.source_files = "SHShortVideo/*.{h,m}"
+    s.resource     = "SHShortVideo/SHShortVideo.bundle"
     s.requires_arc = true
     s.dependency    "Masonry"
 end
