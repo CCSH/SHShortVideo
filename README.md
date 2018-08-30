@@ -5,3 +5,5 @@
 ```
 pod 'SHShortVideo'
 ```
+
+![image](https://github.com/CCSH/SHShortVideo/blob/master/DCCA81422B9AEFAC63B39683E340C919.png)
