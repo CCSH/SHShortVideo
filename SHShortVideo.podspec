@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "SHShortVideo"
-    s.version      = "1.0.0"
+    s.version      = "1.0.1"
     s.summary      = "仿微信录制小视频"
     s.license      = "MIT"
     s.authors      = { "CSH" => "624089195@qq.com" }
