@@ -276,10 +276,7 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
    [self configUI];
    //配置相机
    [self configCamera];
-   //    [self setupCamera];
-   //暂停其他音乐，
-   [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
-   [[AVAudioSession sharedInstance] setActive:YES error:nil];
+   
    //隐藏提示文字
    [self performSelector:@selector(hiddenTip) withObject:nil afterDelay:3];
 }
@@ -533,7 +530,9 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
          break;
       case 2://返回
       {
-         [self dismissViewControllerAnimated:YES completion:nil];
+         dispatch_async(dispatch_get_main_queue(), ^{
+            [self dismissViewControllerAnimated:YES completion:nil];
+         });
       }
          break;
       case 3://完成
@@ -940,8 +939,21 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
       if (granted) {
          [AVCaptureDevice requestAccessForMediaType:AVMediaTypeAudio completionHandler:^(BOOL granted) {
             if (granted) {
+               
                //开始捕捉内容
                [weakSelf.session startRunning];
+               
+               //对焦
+               weakSelf.focusImage.alpha = 0;
+               [weakSelf setFocusCursorWithPoint:weakSelf.bgView.center];
+               
+               //暂停其他声音
+               [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+               [[AVAudioSession sharedInstance] setActive:YES error:nil];
+               
+               //添加将要挂起监听
+               [[NSNotificationCenter defaultCenter] addObserver:weakSelf selector:@selector(willResignActive) name:UIApplicationWillResignActiveNotification object:nil];
+            
             }else{
                [weakSelf btnAction:weakSelf.backBtn];
             }
@@ -956,6 +968,14 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
 - (void)hiddenTip{
    
    [self.tipLab removeFromSuperview];
+}
+
+#pragma mark 程序将要挂起
+- (void)willResignActive{
+   
+   if ([self.session isRunning]) {
+      [self btnAction:self.backBtn];
+   }
 }
 
 #pragma mark - AVCaptureFileOutputRecordingDelegate
@@ -1003,9 +1023,6 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
    
    //校验权限
    [self checkPermissions];
-   //对焦
-   self.focusImage.alpha = 0;
-   [self setFocusCursorWithPoint:self.bgView.center];
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
@@ -1027,8 +1044,12 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
 
 - (void)dealloc{
    
+   if ([self.session isRunning]) {
+      [self.session stopRunning];
+   }
    [self.player stop];
    [[AVAudioSession sharedInstance] setActive:NO withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:nil];
+   [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end
