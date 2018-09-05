@@ -940,20 +940,22 @@ typedef void(^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
          [AVCaptureDevice requestAccessForMediaType:AVMediaTypeAudio completionHandler:^(BOOL granted) {
             if (granted) {
                
-               //开始捕捉内容
-               [weakSelf.session startRunning];
+               dispatch_async(dispatch_get_main_queue(), ^{
+                  //开始捕捉内容
+                  [weakSelf.session startRunning];
+                  
+                  //对焦
+                  weakSelf.focusImage.alpha = 0;
+                  [weakSelf setFocusCursorWithPoint:weakSelf.bgView.center];
+                  
+                  //暂停其他声音
+                  [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+                  [[AVAudioSession sharedInstance] setActive:YES error:nil];
+                  
+                  //添加将要挂起监听
+                  [[NSNotificationCenter defaultCenter] addObserver:weakSelf selector:@selector(willResignActive) name:UIApplicationWillResignActiveNotification object:nil];
+               });
                
-               //对焦
-               weakSelf.focusImage.alpha = 0;
-               [weakSelf setFocusCursorWithPoint:weakSelf.bgView.center];
-               
-               //暂停其他声音
-               [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
-               [[AVAudioSession sharedInstance] setActive:YES error:nil];
-               
-               //添加将要挂起监听
-               [[NSNotificationCenter defaultCenter] addObserver:weakSelf selector:@selector(willResignActive) name:UIApplicationWillResignActiveNotification object:nil];
-            
             }else{
                [weakSelf btnAction:weakSelf.backBtn];
             }
