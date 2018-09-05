@@ -17,8 +17,8 @@
 @property (copy, nonatomic) NSURL *videoUrl;
 
 //开始播放
-- (void)startPlayer;
+- (void)play;
 //结束播放
-- (void)stopPlayer;
+- (void)stop;
 
 @end

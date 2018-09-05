@@ -20,11 +20,11 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+- (IBAction)btnAction:(id)sender {
     
     SHShortVideoViewController *vc = [[SHShortVideoViewController alloc]init];
-    vc.maxSeconds = 10;
-//    vc.isSave = YES;
+//    vc.maxSeconds = 10;
+    //    vc.isSave = YES;
     vc.finishBlock = ^(id content) {
         if ([content isKindOfClass:[NSString class]]) {
             NSLog(@"视频路径：%@",content);
@@ -34,7 +34,6 @@
     };
     [self presentViewController:vc animated:YES completion:nil];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

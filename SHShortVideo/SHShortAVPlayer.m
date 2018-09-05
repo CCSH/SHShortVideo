@@ -20,40 +20,37 @@
 
 - (void)dealloc {
     
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-    [self stopPlayer];
-    self.player = nil;
+    [self stop];
 }
 
 #pragma mark 播放完成
-- (void)playbackFinished {
-    [self.player seekToTime:CMTimeMake(0, 1)];
+- (void)playFinished {
+    [self.player seekToTime:kCMTimeZero];
     [self.player play];
 }
 
 #pragma mark - 公共方法
 #pragma mark 开始播放
-- (void)startPlayer{
+- (void)play{
     
     //初始化
     self.player = [AVPlayer playerWithPlayerItem:[AVPlayerItem playerItemWithURL:self.videoUrl]];
-    
-    //创建播放器层
-    AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
-    playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;//填充模式
-    playerLayer.frame = self.frame;
-    [self.layer addSublayer:playerLayer];
-    
     if (self.player.rate == 0) {
         [self.player play];
     }
     
+    //创建播放器层
+    AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
+    playerLayer.videoGravity = AVLayerVideoGravityResizeAspect;
+    playerLayer.frame = self.frame;
+    [self.layer addSublayer:playerLayer];
+    
     //播放完成通知
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackFinished) name:AVPlayerItemDidPlayToEndTimeNotification object:self.player.currentItem];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playFinished) name:AVPlayerItemDidPlayToEndTimeNotification object:self.player.currentItem];
 }
 
 #pragma mark 结束播放
-- (void)stopPlayer {
+- (void)stop{
     if (self.player.rate == 1) {
         [self.player pause];//如果在播放状态就停止
     }
