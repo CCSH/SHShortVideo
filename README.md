@@ -14,5 +14,6 @@ pod 'SHShortVideo'
 - [x] 录制预览
 - [x] 自定义录制时长
 - [x] 视频压缩
+- [x] 适配iPhoneX
 
 <img src="https://github.com/CCSH/SHShortVideo/blob/master/DCCA81422B9AEFAC63B39683E340C919.png" width="320" height="569"/>
