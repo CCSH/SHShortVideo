@@ -2,6 +2,7 @@
 仿微信录制短视频
 
 # 使用 pod 导入
+[![Pod Version](http://img.shields.io/cocoapods/v/SHShortVideo.svg?style=flat)](http://cocoadocs.org/docsets/SHShortVideo/)
 ```
 pod 'SHShortVideo'
 ```
