@@ -11,5 +11,4 @@ Pod::Spec.new do |s|
     s.source_files = "SHShortVideo/*.{h,m}"
     s.resource     = "SHShortVideo/SHShortVideo.bundle"
     s.requires_arc = true
-    s.dependency    "UIView+SHExtension"
 end
