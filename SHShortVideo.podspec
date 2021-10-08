@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "SHShortVideo"
-    s.version      = "1.0.2"
+    s.version      = "1.0.3"
     s.summary      = "仿微信录制小视频"
     s.license      = "MIT"
     s.authors      = { "CSH" => "624089195@qq.com" }
@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
     s.source_files = "SHShortVideo/*.{h,m}"
     s.resource     = "SHShortVideo/SHShortVideo.bundle"
     s.requires_arc = true
-    s.dependency    "UIView+SHExtension"
+    s.dependency    "SHExtension/UIView"
 end

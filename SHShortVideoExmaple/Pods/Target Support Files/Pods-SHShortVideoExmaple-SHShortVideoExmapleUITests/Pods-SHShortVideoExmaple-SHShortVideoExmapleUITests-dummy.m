@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_SHShortVideoExmaple_SHShortVideoExmapleUITests : NSObject
+@end
+@implementation PodsDummy_Pods_SHShortVideoExmaple_SHShortVideoExmapleUITests
+@end

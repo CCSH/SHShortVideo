@@ -18,7 +18,9 @@
 		5C137B4E21368DBD0052DBC2 /* SHShortVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C137B4D21368DBD0052DBC2 /* SHShortVideoViewController.m */; };
 		5C137B5121368F740052DBC2 /* SHShortAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C137B5021368F740052DBC2 /* SHShortAVPlayer.m */; };
 		5C137B9A213693090052DBC2 /* SHShortVideo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C137B99213693090052DBC2 /* SHShortVideo.bundle */; };
-		5C55FC67213E5F4F00B1149A /* UIView+SHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C55FC66213E5F4F00B1149A /* UIView+SHExtension.m */; };
+		6A34F73AAE586195C5BD028D /* Pods_SHShortVideoExmaple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFD80D9F66D4A56296D0C4D /* Pods_SHShortVideoExmaple.framework */; };
+		99E6A5682C2A62AC6E6D781B /* Pods_SHShortVideoExmapleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D1B8BD37B3C112E5D3EEC1 /* Pods_SHShortVideoExmapleTests.framework */; };
+		BB5931C9061AF1C7A0D91BB8 /* Pods_SHShortVideoExmaple_SHShortVideoExmapleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF258FDF43F8CF2836BC8C9 /* Pods_SHShortVideoExmaple_SHShortVideoExmapleUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AF258FDF43F8CF2836BC8C9 /* Pods_SHShortVideoExmaple_SHShortVideoExmapleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHShortVideoExmaple_SHShortVideoExmapleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FFD80D9F66D4A56296D0C4D /* Pods_SHShortVideoExmaple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHShortVideoExmaple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BAA1AC46E6C668C781DB2D7 /* Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests.release.xcconfig"; path = "Target Support Files/Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests/Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		538C4602E2109419B8FCCA75 /* Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests.debug.xcconfig"; path = "Target Support Files/Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests/Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5C137B1621368D910052DBC2 /* SHShortVideoExmaple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHShortVideoExmaple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C137B1921368D910052DBC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C137B1A21368D910052DBC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,8 +66,11 @@
 		5C137B4F21368F740052DBC2 /* SHShortAVPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHShortAVPlayer.h; sourceTree = "<group>"; };
 		5C137B5021368F740052DBC2 /* SHShortAVPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHShortAVPlayer.m; sourceTree = "<group>"; };
 		5C137B99213693090052DBC2 /* SHShortVideo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SHShortVideo.bundle; sourceTree = "<group>"; };
-		5C55FC64213E5F0800B1149A /* UIView+SHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SHExtension.h"; sourceTree = "<group>"; };
-		5C55FC66213E5F4F00B1149A /* UIView+SHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SHExtension.m"; sourceTree = "<group>"; };
+		A15931F29287A30BF921DCE8 /* Pods-SHShortVideoExmapleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHShortVideoExmapleTests.release.xcconfig"; path = "Target Support Files/Pods-SHShortVideoExmapleTests/Pods-SHShortVideoExmapleTests.release.xcconfig"; sourceTree = "<group>"; };
+		A1D1B8BD37B3C112E5D3EEC1 /* Pods_SHShortVideoExmapleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHShortVideoExmapleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1CCE53B645DD5074F379A8 /* Pods-SHShortVideoExmaple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHShortVideoExmaple.release.xcconfig"; path = "Target Support Files/Pods-SHShortVideoExmaple/Pods-SHShortVideoExmaple.release.xcconfig"; sourceTree = "<group>"; };
+		ED2D1040466495B236BC777C /* Pods-SHShortVideoExmaple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHShortVideoExmaple.debug.xcconfig"; path = "Target Support Files/Pods-SHShortVideoExmaple/Pods-SHShortVideoExmaple.debug.xcconfig"; sourceTree = "<group>"; };
+		F090483375CDE9F24B855E23 /* Pods-SHShortVideoExmapleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHShortVideoExmapleTests.debug.xcconfig"; path = "Target Support Files/Pods-SHShortVideoExmapleTests/Pods-SHShortVideoExmapleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A34F73AAE586195C5BD028D /* Pods_SHShortVideoExmaple.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E6A5682C2A62AC6E6D781B /* Pods_SHShortVideoExmapleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5931C9061AF1C7A0D91BB8 /* Pods_SHShortVideoExmaple_SHShortVideoExmapleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +108,8 @@
 				5C137B3121368D930052DBC2 /* SHShortVideoExmapleTests */,
 				5C137B3C21368D930052DBC2 /* SHShortVideoExmapleUITests */,
 				5C137B1721368D910052DBC2 /* Products */,
+				F67087806EE3C2A5ED8B3642 /* Pods */,
+				5D58E49D96564D73E32D9592 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,7 +126,6 @@
 		5C137B1821368D910052DBC2 /* SHShortVideoExmaple */ = {
 			isa = PBXGroup;
 			children = (
-				5C55FC62213E5F0800B1149A /* UIView+SHExtension */,
 				5C137B4B21368DAD0052DBC2 /* SHShortVideo */,
 				5C137B1921368D910052DBC2 /* AppDelegate.h */,
 				5C137B1A21368D910052DBC2 /* AppDelegate.m */,
@@ -157,13 +170,28 @@
 			path = SHShortVideo;
 			sourceTree = "<group>";
 		};
-		5C55FC62213E5F0800B1149A /* UIView+SHExtension */ = {
+		5D58E49D96564D73E32D9592 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5C55FC64213E5F0800B1149A /* UIView+SHExtension.h */,
-				5C55FC66213E5F4F00B1149A /* UIView+SHExtension.m */,
+				2FFD80D9F66D4A56296D0C4D /* Pods_SHShortVideoExmaple.framework */,
+				1AF258FDF43F8CF2836BC8C9 /* Pods_SHShortVideoExmaple_SHShortVideoExmapleUITests.framework */,
+				A1D1B8BD37B3C112E5D3EEC1 /* Pods_SHShortVideoExmapleTests.framework */,
 			);
-			path = "UIView+SHExtension";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F67087806EE3C2A5ED8B3642 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED2D1040466495B236BC777C /* Pods-SHShortVideoExmaple.debug.xcconfig */,
+				DA1CCE53B645DD5074F379A8 /* Pods-SHShortVideoExmaple.release.xcconfig */,
+				538C4602E2109419B8FCCA75 /* Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests.debug.xcconfig */,
+				3BAA1AC46E6C668C781DB2D7 /* Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests.release.xcconfig */,
+				F090483375CDE9F24B855E23 /* Pods-SHShortVideoExmapleTests.debug.xcconfig */,
+				A15931F29287A30BF921DCE8 /* Pods-SHShortVideoExmapleTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C137B4221368D930052DBC2 /* Build configuration list for PBXNativeTarget "SHShortVideoExmaple" */;
 			buildPhases = (
+				015D7FFCCB0A8D08B9FD914F /* [CP] Check Pods Manifest.lock */,
 				5C137B1221368D910052DBC2 /* Sources */,
 				5C137B1321368D910052DBC2 /* Frameworks */,
 				5C137B1421368D910052DBC2 /* Resources */,
+				A184D6E02C739FA85E4CD788 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,6 +220,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C137B4521368D930052DBC2 /* Build configuration list for PBXNativeTarget "SHShortVideoExmapleTests" */;
 			buildPhases = (
+				8DE192C147C9732A85DFA9AB /* [CP] Check Pods Manifest.lock */,
 				5C137B2A21368D930052DBC2 /* Sources */,
 				5C137B2B21368D930052DBC2 /* Frameworks */,
 				5C137B2C21368D930052DBC2 /* Resources */,
@@ -208,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C137B4821368D930052DBC2 /* Build configuration list for PBXNativeTarget "SHShortVideoExmapleUITests" */;
 			buildPhases = (
+				3F783569B45498EFEEFE62DC /* [CP] Check Pods Manifest.lock */,
 				5C137B3521368D930052DBC2 /* Sources */,
 				5C137B3621368D930052DBC2 /* Frameworks */,
 				5C137B3721368D930052DBC2 /* Resources */,
+				2F508D6B6F312452A7770801 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -292,13 +325,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		015D7FFCCB0A8D08B9FD914F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SHShortVideoExmaple-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F508D6B6F312452A7770801 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests/Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests/Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests/Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F783569B45498EFEEFE62DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DE192C147C9732A85DFA9AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SHShortVideoExmapleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A184D6E02C739FA85E4CD788 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SHShortVideoExmaple/Pods-SHShortVideoExmaple-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SHShortVideoExmaple/Pods-SHShortVideoExmaple-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SHShortVideoExmaple/Pods-SHShortVideoExmaple-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5C137B1221368D910052DBC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5C137B4E21368DBD0052DBC2 /* SHShortVideoViewController.m in Sources */,
-				5C55FC67213E5F4F00B1149A /* UIView+SHExtension.m in Sources */,
 				5C137B1E21368D910052DBC2 /* ViewController.m in Sources */,
 				5C137B2921368D920052DBC2 /* main.m in Sources */,
 				5C137B1B21368D910052DBC2 /* AppDelegate.m in Sources */,
@@ -469,6 +604,7 @@
 		};
 		5C137B4321368D930052DBC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED2D1040466495B236BC777C /* Pods-SHShortVideoExmaple.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -487,6 +623,7 @@
 		};
 		5C137B4421368D930052DBC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA1CCE53B645DD5074F379A8 /* Pods-SHShortVideoExmaple.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -505,6 +642,7 @@
 		};
 		5C137B4621368D930052DBC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F090483375CDE9F24B855E23 /* Pods-SHShortVideoExmapleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +661,7 @@
 		};
 		5C137B4721368D930052DBC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A15931F29287A30BF921DCE8 /* Pods-SHShortVideoExmapleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +680,7 @@
 		};
 		5C137B4921368D930052DBC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 538C4602E2109419B8FCCA75 /* Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SHShortVideoExmapleUITests/Info.plist;
@@ -558,6 +698,7 @@
 		};
 		5C137B4A21368D930052DBC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BAA1AC46E6C668C781DB2D7 /* Pods-SHShortVideoExmaple-SHShortVideoExmapleUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SHShortVideoExmapleUITests/Info.plist;
